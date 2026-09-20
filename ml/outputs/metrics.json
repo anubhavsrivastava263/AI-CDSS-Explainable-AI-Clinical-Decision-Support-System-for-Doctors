@@ -1,0 +1,67 @@
+{
+  "model_name": "XGBoost 30-Day Readmission Classifier (Week 1 Baseline)",
+  "dataset": "UCI Diabetes 130-US Hospitals",
+  "total_samples": 101766,
+  "train_size": 81410,
+  "test_size": 20353,
+  "num_features": 168,
+  "evaluation_metrics": {
+    "accuracy": 0.645,
+    "precision": 0.1818,
+    "recall": 0.6231,
+    "f1_score": 0.2815,
+    "roc_auc": 0.6892
+  },
+  "confusion_matrix": [
+    [
+      11713,
+      6369
+    ],
+    [
+      856,
+      1415
+    ]
+  ],
+  "top_10_features": [
+    {
+      "feature": "number_inpatient",
+      "importance": 0.08716750144958496
+    },
+    {
+      "feature": "discharge_disposition_id",
+      "importance": 0.034882497042417526
+    },
+    {
+      "feature": "number_emergency",
+      "importance": 0.016896335408091545
+    },
+    {
+      "feature": "diabetesMed",
+      "importance": 0.01583016850054264
+    },
+    {
+      "feature": "number_diagnoses",
+      "importance": 0.014493627473711967
+    },
+    {
+      "feature": "medical_specialty_Orthopedics-Reconstructive",
+      "importance": 0.013087478466331959
+    },
+    {
+      "feature": "diag_1_cat_Respiratory",
+      "importance": 0.01304433960467577
+    },
+    {
+      "feature": "insulin_No",
+      "importance": 0.011651108041405678
+    },
+    {
+      "feature": "medical_specialty_Oncology",
+      "importance": 0.011431277729570866
+    },
+    {
+      "feature": "diag_2_cat_Neoplasms",
+      "importance": 0.011009149253368378
+    }
+  ]
+}

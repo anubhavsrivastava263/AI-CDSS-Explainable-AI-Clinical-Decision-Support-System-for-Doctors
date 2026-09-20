@@ -1,0 +1,86 @@
+{
+  "model_name": "XGBoost 30-Day Readmission Classifier (Week 9 tuned)",
+  "dataset": "UCI Diabetes 130-US Hospitals",
+  "feature_engineering": [
+    "age-bin midpoint",
+    "ICD-9 diagnostic categories",
+    "one-hot encounter and medication features",
+    "numeric feature scaling"
+  ],
+  "class_imbalance": {
+    "strategy": "scale_pos_weight",
+    "value": 7.9606
+  },
+  "cross_validation": {
+    "folds": 3,
+    "metric": "roc_auc",
+    "comparison": {
+      "logistic_regression": 0.6241,
+      "baseline_xgboost": 0.6497,
+      "tuned_shallow_xgboost": 0.6557,
+      "tuned_balanced_xgboost": 0.6523
+    },
+    "selected_model": "tuned_shallow_xgboost"
+  },
+  "uncalibrated_test_metrics": {
+    "accuracy": 0.6673,
+    "precision": 0.1835,
+    "recall": 0.5746,
+    "f1_score": 0.2782,
+    "roc_auc": 0.6795,
+    "confusion_matrix": [
+      [
+        12276,
+        5806
+      ],
+      [
+        966,
+        1305
+      ]
+    ]
+  },
+  "calibrated_test_metrics": {
+    "accuracy": 0.8884,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1_score": 0.0,
+    "roc_auc": 0.6794,
+    "confusion_matrix": [
+      [
+        18082,
+        0
+      ],
+      [
+        2271,
+        0
+      ]
+    ]
+  },
+  "calibration_curve": {
+    "mean_predicted_probability": [
+      0.0458,
+      0.06,
+      0.0701,
+      0.0803,
+      0.0908,
+      0.1024,
+      0.1164,
+      0.1353,
+      0.1676,
+      0.2484
+    ],
+    "fraction_of_positives": [
+      0.0354,
+      0.0526,
+      0.0668,
+      0.0717,
+      0.0825,
+      0.1002,
+      0.1204,
+      0.1459,
+      0.1744,
+      0.2657
+    ]
+  },
+  "note": "Calibration and external validation are required before interpreting a score as a reliable clinical probability. This prototype is decision support only."
+}
