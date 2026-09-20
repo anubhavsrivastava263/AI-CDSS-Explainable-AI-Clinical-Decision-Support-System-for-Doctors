@@ -1,0 +1,41 @@
+{
+  "embedding_mode": "sentence-transformers/all-MiniLM-L6-v2",
+  "chunks": [
+    {
+      "source": "ADA Standards of Care 2026: Diabetes Screening and Classification",
+      "source_url": "https://diabetesjournals.org/care/article/49/Supplement_1/S27/163926/2-Diagnosis-and-Classification-of-Diabetes",
+      "section": "Scope and clinician review",
+      "text": "This curated project summary supports retrieval demonstrations only. It is not a substitute for the full American Diabetes Association Standards of Care, local policy, clinical judgement, or confirmatory testing. Review the source guideline and the patient's complete context before acting."
+    },
+    {
+      "source": "ADA Standards of Care 2026: Diabetes Screening and Classification",
+      "source_url": "https://diabetesjournals.org/care/article/49/Supplement_1/S27/163926/2-Diagnosis-and-Classification-of-Diabetes",
+      "section": "Diagnostic testing context",
+      "text": "The ADA describes A1C, fasting plasma glucose, and two-hour plasma glucose during a 75 g oral glucose tolerance test as tests used for screening and diagnosis. In the absence of unequivocal hyperglycemia, abnormal results require confirmation. Test selection and interpretation depend on the clinical context and possible factors that affect A1C or glucose measurements."
+    },
+    {
+      "source": "ADA Standards of Care 2026: Diabetes Screening and Classification",
+      "source_url": "https://diabetesjournals.org/care/article/49/Supplement_1/S27/163926/2-Diagnosis-and-Classification-of-Diabetes",
+      "section": "Screening context",
+      "text": "The guideline recommends using risk assessment to guide testing for prediabetes and type 2 diabetes. It describes testing adults with overweight or obesity plus relevant risk factors, and beginning screening at age 35 for other adults. Results and patient risk influence when repeat testing is appropriate."
+    },
+    {
+      "source": "AHA/ACC 2025 High Blood Pressure Guideline: Classification Summary",
+      "source_url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know",
+      "section": "Scope and clinician review",
+      "text": "This short project summary is a retrieval corpus excerpt, not a diagnostic or treatment recommendation. Use validated measurements, the full guideline, local protocols, and clinician judgement when evaluating blood pressure."
+    },
+    {
+      "source": "AHA/ACC 2025 High Blood Pressure Guideline: Classification Summary",
+      "source_url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know",
+      "section": "Classification framework",
+      "text": "The 2025 AHA/ACC framework describes normal blood pressure as systolic below 120 mm Hg and diastolic below 80 mm Hg. It describes elevated blood pressure as systolic 120 to 129 mm Hg with diastolic below 80 mm Hg. Stage 1 is systolic 130 to 139 mm Hg or diastolic 80 to 89 mm Hg; stage 2 is systolic at least 140 mm Hg or diastolic at least 90 mm Hg."
+    },
+    {
+      "source": "AHA/ACC 2025 High Blood Pressure Guideline: Classification Summary",
+      "source_url": "https://professional.heart.org/en/science-news/2025-high-blood-pressure-guideline/top-things-to-know",
+      "section": "Measurement and context",
+      "text": "Blood pressure classification should be based on appropriate measurements and clinical context. The guideline identifies home blood-pressure monitoring with structured clinical follow-up as useful, and notes limitations in relying on cuffless devices for accurate measurement."
+    }
+  ]
+}

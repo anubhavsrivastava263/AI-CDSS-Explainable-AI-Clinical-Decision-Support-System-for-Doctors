@@ -7,11 +7,15 @@ import sys
 import os
 import uvicorn
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-if current_dir not in sys.path:
-    sys.path.insert(0, current_dir)
 
-os.chdir(current_dir)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+backend_dir = current_dir if os.path.basename(current_dir) == "backend" else os.path.join(current_dir, "backend")
+
+if backend_dir not in sys.path:
+    sys.path.insert(0, backend_dir)
+
+
+os.chdir(backend_dir)
 
 if __name__ == "__main__":
     print("=" * 60)
